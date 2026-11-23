@@ -1,6 +1,6 @@
 // Offline support: the whole game runs on the device, so cache every file the page loads.
 // Bump VERSION to force phones to fetch a new build.
-const VERSION = 'leight-v18';
+const VERSION = 'leight-v19';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(VERSION).then((cache) => cache.addAll(['./', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'])));
